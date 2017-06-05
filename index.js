@@ -76,7 +76,11 @@ exports.generate = function (opts, cb) {
             file: file.getVinylPromise(opts),
             css: corePromise
         }).then(function (result) {
-            return sourceInliner(result.file.contents.toString(), result.css, {
+            var html = result.file.contents.toString()
+            if (opts.htmlToUseAsBaseForInlining) {
+                html = opts.htmlToUseAsBaseForInlining
+            }
+            return sourceInliner(html, result.css, {
                 minify: opts.minify || false,
                 extract: opts.extract || false,
                 basePath: opts.base || process.cwd()
