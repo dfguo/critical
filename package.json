@@ -45,7 +45,7 @@
     "mime-types": "^2.1.14",
     "oust": "^0.3.0",
     "parseurl": "^1.3.1",
-    "penthouse": "git://github.com/dfguo/penthouse.git#b64b2d73bce989b14ae86a201c0a162441a8382c",
+    "penthouse": "git://github.com/dfguo/penthouse.git#3d8ae12662e5298e2aa15ec0bfc2d6ea03a74ea6",
     "postcss": "^5.2.12",
     "postcss-image-inliner": "^1.0.4",
     "request": "^2.79.0",
